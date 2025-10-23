@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* 1. Center everything perfectly */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* 2. Calculator container styling */
+.calculator {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* 3. Title */
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* 4. Display area */
+.display {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #f2f2f2;
+  text-align: right;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.memory-display {
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 15px 0;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: none; /* 👈 hide by default */
+}
+
+.memory-visible {
+  display: block;
+  opacity: 1;
+}
+
+/* 5. Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button:last-child {
+  grid-column: 4;
+  grid-row: 5 / span 2;
+}
+
+/* 6. Buttons look */
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 600;
+}
+
+/* 7. Button hover effect */
+button:hover {
+  background: #b0b0b0;
+  transform: scale(1.05);
+}
+
+/* 8. Operator and equal special styles */
+button.operator {
+  background: #4a90e2;
+  color: white;
+}
+button.operator:hover {
+  background: #3b7ac8;
+}
+
+/* 9. Memory button styles */
+button.memory {
+  background: #ffb300; /* amber tone */
+  color: black;
+  /* color: white; */
+}
+button.memory:hover {
+  background: #e69a00; /* slightly darker amber */
+}
+
+button:last-child {
+  background: #27ae60;
+  color: white;
+}
+button:last-child:hover {
+  background: #1e8449;
+}
+
+
+@media (max-width: 480px) {
+  .calculator {
+    width: 90%;
+    padding: 15px;
+  }
+  button {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  margin-top: 15px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.history-section>h3 {
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+.history {
+  max-height: 150px;
+  overflow-y: auto;
+  font-size: 14px;
+  color: #444;
+}
+
+.history p {
+  font-size: larger;
+  font-weight: bold;
+  margin: 2px 0;
+  font-family: monospace;
+}
+
+.history-section>.clear-history {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.history-section>.clear-history:hover {
+  background: #c0392b;
+}
