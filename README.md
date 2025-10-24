@@ -14,7 +14,7 @@ This project features memory functions, calculation history, and keyboard suppor
 
 ![Calculator Preview](https://raw.githubusercontent.com/HMHHBI/calculator/main/preview.png)
 
-> 💡 *(Tip: You can upload a screenshot named `preview.png` in your repo to display it above.)*
+> 💡 *(Tip: Upload a screenshot named `preview.png` in your repo to show it above.)*
 
 ---
 
@@ -27,4 +27,28 @@ This project features memory functions, calculation history, and keyboard suppor
 
 ---
 
+## ⌨️ Keyboard Controls
+
+You can use the keyboard to type numbers and operators instead of clicking buttons.  
+Here are all available **shortcuts**:
+
+| Key / Combination | Function |
+|-------------------|-----------|
+| `0–9`, `.`, `+`, `-`, `*`, `/`, `%`, `^` | Type numbers and operators |
+| `Enter` | Calculate result (=) |
+| `Backspace` | Delete last character |
+| `C` | Clear display |
+| **Shift + =** | `M+` (Add to memory) |
+| **Shift + -** | `M-` (Subtract from memory) |
+| **Ctrl + R** | `MR` (Recall memory) |
+| **Ctrl + C** | `MC` (Clear memory) |
+
+> 🧠 Tip: Memory value automatically appears and hides when updated.
+
+---
+
 ## 📂 Project Structure
+calculator/
+├── index.html # Main HTML file
+├── j1.css # Styling
+└── j.js # Calculator logic
