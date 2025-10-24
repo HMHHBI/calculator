@@ -49,6 +49,6 @@ Here are all available **shortcuts**:
 
 ## 📂 Project Structure
 calculator/
-├── index.html # Main HTML file
-├── j1.css # Styling
-└── j.js # Calculator logic
+##### ├── index.html Main HTML file
+##### ├── j1.css Styling
+##### └── j.js Calculator logic
